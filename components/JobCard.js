@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { format } from "./utils/dates"
@@ -11,10 +10,10 @@ const JobCard = ({ job = {} }) => {
         fetch(`/api/scan?url=${url}`)
             .then((res) => res.json())
             .then((res) => setPageData(res))
-    }, [])
+    }, [url])
+
     const { description, icon, title: pageTitle } = pageData
     const { title = '', link = '', repository = '', image, latestDeployment, url } = job
-    console.log(icon, url)
     return (
         <div className="flex bg-base-100 h-[200px] w-full  m-1 justify-between p-2">
             <div className=' grid   w-3/4' >

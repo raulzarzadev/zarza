@@ -1,7 +1,13 @@
+//@ts-ignore
+/**
+* #You canot use image/next because de images are commign for multiple pages ...
+*
+*/
 const SkillCard = ({ skill = {} }) => {
     const { name = 'skill name', image = '', experience = 'skill experinece' } = skill
     return (
         <div className='bg-base-300 h-32 w-44 flex '>
+            
             <div>
                 <img src={image} alt={name} className='h-20' />
             </div>

@@ -24,7 +24,7 @@ const BottomBar = ({ sections }) => {
             window.removeEventListener("scroll", handleScroll);
         };
 
-    }, [])
+    }, [sections])
 
     return (
         <div className='flex justify-evenly bg-transparent fixed bottom-0 w-full bg-gradient-to-t from-violet-300 py-5 '>

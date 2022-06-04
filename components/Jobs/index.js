@@ -2,7 +2,7 @@ const Jobs = () => {
     return (
         <div>
             <h3 className="text-xl font-bold">
-                Where I’ve Worked
+              {`  Where I've Worked`}
             </h3>
             <div className="text-">
                 <div className="my-10">
@@ -45,7 +45,7 @@ const Jobs = () => {
                          `}
                     </p>
 
-                    <a href="https://packshoe.com" target='_blank'>see more</a>
+                    <a href="https://packshoe.com" target='_blank'  rel="noreferrer">see more</a>
 
                 </div>
                 <div>
