@@ -17,7 +17,12 @@ const Contact = () => {
                 `}
             </p>
             <div>
-                <a href="mailto:raulzarza.dev@gmail.com" className=" btn btn-outline my-10 " target='_blank' >
+                <a 
+                href="mailto:raulzarza.dev@gmail.com" 
+                className=" btn btn-outline my-10 " 
+                target='_blank' 
+                rel="noreferrer"
+                >
                     {`Say Hello`}
                 </a>
             </div>
