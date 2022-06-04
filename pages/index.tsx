@@ -15,8 +15,8 @@ export default function Home() {
   const SECTIONS = {
     home: <Hello />,
     about: <About />,
-    builds: <Works />,
     jobs: <Jobs />,
+    builds: <Works />,
     contact: <Contact />
 
     // contact: <div>contact</div>,

@@ -8,7 +8,10 @@ const Works = () => {
     }, [])
     const [vercelProjects, setVercelProjects] = useState([])
     return (
-        <div>
+        <div
+            className='bg-slate-500 bg-opacity-50  bg-no-repeat bg-fixed bg-cover min-h-screen w-full mx-auto'
+            style={{ backgroundImage: `url(/images/ireland.jpg)` }}
+        >
             <h2 className="text-4xl my-10 font-bold text-center">
                 Some Things I’ve Built
             </h2>
