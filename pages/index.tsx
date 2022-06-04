@@ -7,6 +7,7 @@ import Hello from "comps/Hello";
 import About from "comps/About";
 import Works from "comps/Works";
 import Jobs from "comps/Jobs";
+import Contact from "comps/Contact";
 
 export default function Home() {
 
@@ -15,7 +16,8 @@ export default function Home() {
     home: <Hello />,
     about: <About />,
     builds: <Works />,
-    jobs: <Jobs />
+    jobs: <Jobs />,
+    contact: <Contact />
 
     // contact: <div>contact</div>,
     // skills: <Skills />,

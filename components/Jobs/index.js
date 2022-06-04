@@ -28,11 +28,11 @@ const Jobs = () => {
                     <a href="#builds" >see more</a>
                 </div>
                 <div>
-                    <h5>
+                    <h5 className="font-bold">
                         epiphanyapps
                     </h5>
                     <p className="text-sm">
-                        jan 2020 - oct 2022
+                        may 2020 - oct 2020
                     </p>
 
                     <p
