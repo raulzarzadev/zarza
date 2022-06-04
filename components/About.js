@@ -9,8 +9,9 @@ const About = () => {
                     <div>
                         <h2 className='font-bold  text-4xl text-center pt-10'>About me</h2>
                         <p className='text-center'>
-                            {`I love to create solutions and make PWA's. Currently I'm using Next.js and Firebase to make it faster.`}
-                            <a href='#work'>whan a see some</a> </p>
+                            {` I love to create solutions and make PWA's. 
+                            Currently I'm using Next.js and Firebase to make it faster. `}
+                            <a href='#work'> see some</a> </p>
                     </div>
                 </div>
             </div>
