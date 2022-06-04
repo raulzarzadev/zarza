@@ -27,19 +27,38 @@ const BottomBar = ({ sections }) => {
     }, [sections])
 
     return (
-        <div className='flex justify-evenly bg-transparent fixed bottom-0 w-full bg-gradient-to-t from-violet-300 py-5 '>
-            {sections.map(section => (
-                <div
-                    key={section}>
-                    <a
-                        href={`#${section}`}
-                        className={`${onSection === section ? 'bg-violet-500' : 'bg-transparent font-bold'} text-sm hover:bg-gradient-to-l from-green-300  text-white text-center px-4 py-2 rounded-full transition-colors`}
+        <>
+            <div className=' hidden sm:flex justify-evenly bg-transparent fixed bottom-0 w-full bg-gradient-to-t from-violet-300 py-5 '>
+                {sections.map(section => (
+                    <div
+                        key={section}
+                        className=''
                     >
-                        {section?.toUpperCase()}
-                    </a>
-                </div>
-            ))}
-        </div>
+                        <a
+                            href={`#${section}`}
+                            className={`${onSection === section ? 'bg-violet-500' : 'bg-transparent font-bold'} text-sm hover:bg-gradient-to-l from-green-300  text-white text-center px-4 py-2 rounded-full transition-colors`}
+                        >
+                            {section?.toUpperCase()}
+                        </a>
+                    </div>
+                ))}
+            </div>
+            <div className='sm:hidden  grid gap-6 text-right bg-transparent fixed right-0 bottom-0 h-screen bg-gradient-to-l  from-violet-300 pl-2 py-5 '>
+                {sections.map(section => (
+                    <div
+                        key={section}
+                        className=''
+                    >
+                        <a
+                            href={`#${section}`}
+                            className={`${onSection === section ? 'bg-violet-500' : 'bg-transparent font-bold'} text-sm hover:bg-gradient-to-l  from-green-300  text-white text-center px-2 py-2 rounded-full transition-colors`}
+                        >
+                            {section?.toUpperCase()}
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </>
     )
 }
 

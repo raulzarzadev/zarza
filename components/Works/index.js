@@ -6,7 +6,30 @@ const Works = () => {
     useEffect(() => {
         getVercelProjects().then(setVercelProjects)
     }, [])
+    const [domains, setDomains] = useState([])
+
+    useEffect(() => {
+        const VERCEL_TOKEN = process.env.NEXT_PUBLIC_VERCEL_TOKEN
+        console.log(VERCEL_TOKEN)
+        fetch('https://api.vercel.com/v5/domains', {
+            headers: {
+                'Authorization': `Bearer ${VERCEL_TOKEN}`,
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(res => res.json()
+                .then(res => setDomains({
+                    ...res.domains?.map(domain => {
+                        return {
+                            name: domain.name,
+                            id: domain.id,
+                        }
+                    })
+                })))
+    }, [])
     const [vercelProjects, setVercelProjects] = useState([])
+    console.log(domains)
+    console.log(vercelProjects)
     return (
         <div
             className='bg-slate-500 bg-opacity-50  bg-no-repeat bg-fixed bg-cover min-h-screen w-full mx-auto'
