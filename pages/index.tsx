@@ -9,20 +9,19 @@ import Hello from "comps/Hello";
 import About from "comps/About";
 import Skills from "comps/Skills";
 import Works from "comps/Works";
+import Jobs from "comps/Jobs";
 
 export default function Home() {
-
-  useEffect(() => {
-    getVercelProjects().then(setVercelProjects)
-  }, [])
-  const [vercelProjects, setVercelProjects] = useState([])
 
 
   const SECTIONS = {
     home: <Hello />,
     about: <About />,
-    work: <Works />,
-    skills: <Skills />,
+    builds: <Works />,
+    jobs: <Jobs />
+
+    // contact: <div>contact</div>,
+    // skills: <Skills />,
   }
   const sections = Object.keys(SECTIONS)
 
@@ -35,7 +34,7 @@ export default function Home() {
       <div className=' bg-violet-200  ' >
         {sections.map(section => {
           return (
-            <section key={section} id={section} className='min-h-screen flex'>
+            <section key={section} id={section} className='min-h-screen flex justify-center items-center'>
               {SECTIONS[section]}
             </section>
           )
