@@ -15,7 +15,7 @@ const JobCard = ({ job = {} }) => {
     const { description, icon, title: pageTitle } = pageData
     const { title = '', link = '', repository = '', image, latestDeployment, url } = job
     return (
-        <div className="flex bg-base-100 h-[200px] w-full  m-1 justify-between p-2">
+        <div className="flex bg-base-100 h-[200px] w-full  justify-between p-2">
             <div className=' grid   w-3/4' >
                 <h4 className='text-xl font-bold p-1 text-center'>{pageTitle}</h4>
                 <p className='text-sm'>

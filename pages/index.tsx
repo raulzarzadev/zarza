@@ -10,8 +10,6 @@ import Jobs from "comps/Jobs";
 import Contact from "comps/Contact";
 
 export default function Home() {
-
-
   const SECTIONS = {
     home: <Hello />,
     about: <About />,

@@ -1,7 +1,7 @@
 const Jobs = () => {
     return (
-        <div>
-            <h3 className="text-xl font-bold">
+        <div className="px-4">
+            <h3 className="text-4xl text-center text-white font-bold ">
               {`  Where I've Worked`}
             </h3>
             <div className="text-">

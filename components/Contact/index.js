@@ -4,7 +4,7 @@ const Contact = () => {
             <h3 className="">
                 {`  Whats's Nexts? `}
             </h3>
-            <p className="text-4xl font-bold">
+            <p className="text-4xl font-bold text-white">
                 {`Get In touch`}
             </p>
             <p className="whitespace-pre-line">

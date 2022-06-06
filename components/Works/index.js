@@ -35,11 +35,11 @@ const Works = () => {
             className='bg-slate-500 bg-opacity-50  bg-no-repeat bg-fixed bg-cover min-h-screen w-full mx-auto'
             style={{ backgroundImage: `url(/images/ireland.jpg)` }}
         >
-            <h2 className="text-4xl my-10 font-bold text-center">
+            <h2 className="text-4xl my-10 font-bold text-center text-white">
                 Some Things I’ve Built
             </h2>
 
-            <div className="grid place-content-center sm:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+            <div className="grid place-content-center sm:grid-cols-2 lg:grid-cols-3 gap-4 py-2">
                 {[...vercelProjects].map(job => (
                     <div key={job?.id} className='h-full w-full'>
                         <JobCard job={job} />
