@@ -6,6 +6,7 @@ import About from 'comps/About'
 import Works from 'comps/Works'
 import Jobs from 'comps/Jobs'
 import Contact from 'comps/Contact'
+import Navigation from 'comps/Navigation'
 
 export const getServerSideProps = async () => {
   const res = await fetch(
@@ -22,11 +23,11 @@ export const getServerSideProps = async () => {
   }
 }
 export default function Home(props: { works: any[] }) {
-  console.log(props?.works)
+  //console.log(props?.works)
   const SECTIONS = {
-    home: <Hello />,
-    about: <About />,
-    jobs: <Jobs />,
+    hello: <Hello />,
+    // about: <About />,
+    // jobs: <Jobs />,
     builds: <Works />,
     contact: <Contact />
 
@@ -41,6 +42,8 @@ export default function Home(props: { works: any[] }) {
         <title>Raúl Zarza</title>
       </Head>
       <div className=" bg-violet-200  ">
+        {/* <BottomBar sections={sections} /> */}
+        <Navigation sections={sections} />
         {sections.map((section) => {
           return (
             <section
@@ -53,9 +56,9 @@ export default function Home(props: { works: any[] }) {
           )
         })}
       </div>
-      <footer>
-        <BottomBar sections={sections} />
-      </footer>
+      {/* <footer>
+       
+      </footer> */}
     </>
   )
 }
