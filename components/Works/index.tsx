@@ -74,7 +74,7 @@ const Works = () => {
       style={{ backgroundImage: `url(/images/ireland.jpg)` }}
     >
       <h2 className="text-4xl my-10 font-bold text-center text-white">
-        Some Things I’ve Built
+        Some things I’ve built
       </h2>
 
       <div className="grid place-content-center sm:grid-cols-2 lg:grid-cols-3 gap-4 py-2">

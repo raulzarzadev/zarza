@@ -1,10 +1,7 @@
 import Head from 'next/head'
 import Layout from 'comps/Layout'
-import BottomBar from 'comps/Navigation/BottomBar'
 import Hello from 'comps/Hello'
-import About from 'comps/About'
 import Works from 'comps/Works'
-import Jobs from 'comps/Jobs'
 import Contact from 'comps/Contact'
 import Navigation from 'comps/Navigation'
 
